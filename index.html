@@ -38,6 +38,10 @@
         .rating-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .review-input { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
         .submit-btn { margin-top: 10px; padding: 10px 20px; background: #2c3e50; color: white; border: none; border-radius: 8px; cursor: pointer; }
+
+        .footer { text-align: center; padding: 20px; color: #555; font-size: 12px; line-height: 1.6; margin-top: 30px; background: #ececec; }
+        .footer-links { margin-top: 10px; }
+        .footer-links a { color: #555; text-decoration: none; margin: 0 5px; }
     </style>
 </head>
 <body>
@@ -101,6 +105,14 @@
         <input type="text" id="review-input" class="review-input" placeholder="Թողնել կարծիք...">
         <button onclick="addReview()" class="submit-btn">Ուղարկել</button>
         <div id="reviews-list"></div>
+    </div>
+
+    <div class="footer">
+        <strong>Mecamor Resort.</strong> БИН: 202608221234. Email: support@mecamor-resort.am.<br>
+        Все права защищены. Адрес: Армавирская обл., с. Маисян, 64.
+        <div class="footer-links">
+            ЧАВО | Центр помощи | Условия использования | Политика конфиденциальности
+        </div>
     </div>
 
     <script>
