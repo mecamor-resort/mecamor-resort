@@ -24,8 +24,11 @@
         .dot.active { background-color: #2c3e50; }
 
         .price-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center; }
+        .old-price { text-decoration: line-through; color: #888; font-size: 18px; margin-right: 10px; }
         .new-price { color: #e74c3c; font-size: 26px; font-weight: bold; }
-        .description-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); line-height: 1.6; white-space: pre-line; }
+        
+        .description-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); line-height: 1.8; white-space: pre-line; }
+        
         .buttons-container { display: flex; gap: 10px; padding: 0 20px; margin-bottom: 20px; }
         .btn { flex: 1; padding: 12px; text-align: center; border-radius: 10px; text-decoration: none; color: white; font-weight: bold; font-size: 14px; }
         .btn-call { background-color: #27ae60; }
@@ -65,18 +68,32 @@
 
     <div class="price-box">
         <h2>Արժեքը</h2>
+        <span class="old-price">70.000 դրամ</span>
         <span class="new-price">60.000 դրամ</span>
     </div>
-    <div class="description-box">
-        Լավագույն հանգիստը Մեծամորում😍: Լողավազան, տաղավար, մանղալ և անմոռանալի մթնոլորտ...🫠
-        Արժեքի մեջ ներառված է`
-        🏠 Փակ տաղավար, ❄️ Օդորակիչ, 📶 Wi-Fi, 🍽 Սպասք, 🧊 Սառնարան, 🎵 Նվագարկիչ, 🚿 Տաք/սառը ջուր, 🍖 Մանղալ, 🚻 Լողավազան, 🛏 Տաֆչաններ, 🪂 Ճօճանակ
-    </div>
+
+    <div class="description-box">Լավագույն հանգիստը Մեծամորում😍: Լողավազան, տաղավար, մանղալ և անմոռանալի մթնոլորտ...🫠
+
+Արժեքի մեջ ներառված է`
+🏠 Փակ տաղավար
+❄️ Օդորակիչ
+📶 Wi-Fi
+🍽 Սպասք՝ մինչև 50 անձի համար
+🧊 Սառնարան
+🎵 Նվագարկիչ
+🚿 Տաք և սառը ջուր
+🍖 Մանղալ և շամփուրներ
+🚻 24 ժամ ֆիլտրվող լողավազան
+🌊 Սասֆոններ
+🛏 Տաֆչաններ
+🪂 Ճօճանակ</div>
+
     <div class="buttons-container">
         <a href="tel:+37455338838" class="btn btn-call">Զանգահարել</a>
         <a href="https://wa.me/37455338838" class="btn btn-wa">WhatsApp</a>
         <a href="https://instagram.com/mecamor_resort" class="btn btn-ig">Instagram</a>
     </div>
+
     <div class="rating-box">
         <div style="font-size:32px; font-weight:bold;">4.8</div>
         <div style="color:#f1c40f; font-size:24px;">★★★★★</div>
