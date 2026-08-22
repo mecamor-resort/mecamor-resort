@@ -108,6 +108,14 @@
             font-weight: bold;
             font-size: 15px;
         }
+
+        /* Стили для слайдера */
+        .slider-container { margin: 20px; position: relative; }
+        .slider { width: 100%; overflow: hidden; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .slide { width: 100%; display: none; }
+        .dots-container { text-align: center; margin-top: 10px; }
+        .dot { height: 10px; width: 10px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer; }
+        .active { background-color: #2c3e50; }
     </style>
 </head>
 <body>
@@ -125,6 +133,47 @@
         <p><strong>Հասցե՝</strong> Արմավիրի մարզ, գ. Մաիսյան, 1-ին փողոց 1-ին Թաղամաս Այգեգործական, 64</p>
         <a href="https://maps.app.goo.gl/97JLzZvcUpHg6oBA6?g_st=ac" target="_blank" class="route-link">Маршрут</a>
     </div>
+
+    <!-- Галерея -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="IMG_20260822_023530.jpg" class="slide">
+            <img src="IMG_20260822_023509.jpg" class="slide">
+            <img src="IMG_20260822_023453.jpg" class="slide">
+            <img src="IMG_20260822_023440.jpg" class="slide">
+            <img src="IMG_20260822_023423.jpg" class="slide">
+            <img src="IMG_20260822_023403.jpg" class="slide">
+            <img src="IMG_20260822_023346.jpg" class="slide">
+            <img src="IMG_20260822_023327.jpg" class="slide">
+        </div>
+        <div class="dots-container" id="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function currentSlide(n) { showSlides(slideIndex = n); }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+            for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 
     <div class="description-box">
 Լավագույն հանգիստը Մեծամորում😍: Լողավազան, տաղավար, մանղալ և անմոռանալի մթնոլորտ...🫠
