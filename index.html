@@ -22,13 +22,17 @@
         .dot { height: 8px; width: 8px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; }
         .active { background-color: #2c3e50; }
 
+        .price-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center; }
+        .price-box h2 { margin: 0 0 10px 0; color: #2c3e50; font-size: 22px; }
+        .new-price { color: #e74c3c; font-size: 26px; font-weight: bold; }
+        .description-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); line-height: 1.6; color: #333; white-space: pre-line; }
+
         .buttons-container { display: flex; gap: 10px; padding: 0 20px; margin-bottom: 20px; }
         .btn { flex: 1; padding: 12px; text-align: center; border-radius: 10px; text-decoration: none; color: white; font-weight: bold; font-size: 14px; }
         .btn-call { background-color: #27ae60; }
         .btn-wa { background-color: #25d366; }
         .btn-ig { background-color: #e1306c; }
 
-        /* Блок рейтинга */
         .rating-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .rating-stars { color: #f1c40f; font-size: 24px; }
         .rating-num { font-size: 32px; font-weight: bold; color: #333; }
@@ -36,10 +40,6 @@
         .submit-btn { margin-top: 10px; padding: 10px 20px; background: #2c3e50; color: white; border: none; border-radius: 8px; cursor: pointer; }
         #reviews-list { margin-top: 20px; text-align: left; }
         .review-item { padding: 10px; border-bottom: 1px solid #eee; }
-
-        .description-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); line-height: 1.6; color: #333; white-space: pre-line; }
-        .price-box { margin: 20px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center; }
-        .new-price { color: #e74c3c; font-size: 26px; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -70,13 +70,35 @@
         <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
     </div>
 
+    <div class="price-box">
+        <h2>Արժեքը</h2>
+        <span class="new-price">60.000 դրամ</span>
+    </div>
+
+    <div class="description-box">
+Լավագույն հանգիստը Մեծամորում😍: Լողավազան, տաղավար, մանղալ և անմոռանալի մթնոլորտ...🫠
+
+Արժեքի մեջ ներառված է`
+🏠 Փակ տաղավար
+❄️ Օդորակիչ
+📶 Wi-Fi
+🍽 Սպասք՝ մինչև 50 անձի համար
+🧊 Սառնարան
+🎵 Նվագարկիչ
+🚿 Տաք և սառը ջուր
+🍖 Մանղալ և շամփուրներ
+🚻 24 ժամ ֆիլտրվող լողավազան
+🌊 Սասֆոններ
+🛏 Տաֆչաններ
+🪂 Ճօճանակ
+    </div>
+
     <div class="buttons-container">
         <a href="tel:+37455338838" class="btn btn-call">Զանգահարել</a>
         <a href="https://wa.me/37455338838" class="btn btn-wa">WhatsApp</a>
         <a href="https://instagram.com/mecamor_resort" class="btn btn-ig">Instagram</a>
     </div>
 
-    <!-- Блок рейтинга -->
     <div class="rating-box">
         <div class="rating-num">4.8</div>
         <div class="rating-stars">★★★★★</div>
@@ -87,7 +109,6 @@
     </div>
 
     <script>
-        // Слайдер
         const slider = document.getElementById('slider');
         const dots = document.querySelectorAll('.dot');
         slider.addEventListener('scroll', () => {
@@ -95,7 +116,6 @@
             dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
         });
 
-        // Отзывы
         let count = 238;
         function addReview() {
             const input = document.getElementById('review-input');
@@ -111,15 +131,5 @@
             }
         }
     </script>
-
-    <div class="description-box">
-Լավագույն հանգիստը Մեծամորում😍: Լողավազան, տաղավար, մանղալ և անմոռանալի մթնոլորտ...🫠
-    </div>
-
-    <div class="price-box">
-        <h2>Արժեքը</h2>
-        <span class="new-price">60.000 դրամ</span>
-    </div>
-
 </body>
 </html>
