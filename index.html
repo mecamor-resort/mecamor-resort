@@ -1,9 +1,164 @@
-    <!-- Блок цены (исправленный) -->
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecamor Resort</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #f4f4f4; padding-bottom: 50px; }
+
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-image: url('IMG_20260822_031529.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-content {
+            padding: 0 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -60px;
+            background-image: url('IMG_20260822_031545.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #fff;
+        }
+
+        .info { margin-left: 20px; margin-top: 10px; }
+        h1 { margin: 0; font-size: 24px; }
+
+        .contact-info {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .contact-info p {
+            margin: 0 0 10px 0;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .route-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .route-link:hover {
+            text-decoration: underline;
+        }
+
+        .description-box {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            line-height: 1.6;
+            color: #333;
+            white-space: pre-line;
+        }
+
+        .price-box {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .price-box h2 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 22px;
+        }
+
+        .prices-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 8px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 20px;
+        }
+
+        .new-price {
+            color: #e74c3c;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .discount-text {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner"></div>
+
+    <div class="header-content">
+        <div class="avatar"></div>
+        <div class="info">
+            <h1>Mecamor Resort</h1>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Հասցե՝</strong> Արմավիրի մարզ, գ. Մաիսյան, 1-ին փողոց 1-ին Թաղամաս Այգեգործական, 64</p>
+        <a href="https://maps.app.goo.gl/97JLzZvcUpHg6oBA6?g_st=ac" target="_blank" class="route-link">Маршрут</a>
+    </div>
+
+    <div class="description-box">
+Լավագույն հանգիստը Մեծամորում😍: Լողավազան, տաղավար, մանղալ և անմոռանալի մթնոլորտ...🫠
+
+Արժեքի մեջ ներառված է`
+🏠 Փակ տաղավար
+❄️ Օդորակիչ
+📶 Wi-Fi
+🍽 Սպասք՝ մինչև 50 անձի համար
+🧊 Սառնարան
+🎵 Նվագարկիչ
+🚿 Տաք և սառը ջուր
+🍖 Մանղալ և շամփուրներ
+🚻 24 ժամ ֆիլտրվող լողավազան
+🌊 Սասֆոններ
+🛏 Տաֆչաններ
+🪂 Ճօճանակ
+    </div>
+
     <div class="price-box">
         <h2>Արժեքը</h2>
-        <div>
+        <div class="prices-container">
             <span class="old-price">60.000 դրամ</span>
             <span class="new-price">55.000 դրամ</span>
         </div>
         <div class="discount-text">🤗 Նախապես գրանցման դեպքում՝ 55.000 դրամ</div>
     </div>
+
+</body>
+</html>
